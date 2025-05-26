@@ -1,6 +1,6 @@
 <?php
 require 'conexion.php';
-
+echo json_encode($_POST);
 $idPrograma = $mysqli->real_escape_string($_POST['id_programa']);
 
 $sql = $mysqli->query("SELECT id, ciclo FROM t_ciclo WHERE id_programa=$idPrograma");
